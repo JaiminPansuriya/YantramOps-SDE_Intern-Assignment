@@ -1,4 +1,4 @@
-# YantramOps Notes
+# YantramOps Notes (SDE Intern Assignment)
 
 YantramOps Notes is a server-rendered note-taking app built with FastAPI, Jinja2, and MongoDB. Create, browse, edit, and delete notes, mark important notes, and learn about the YantramOps mission on the About page.
 
