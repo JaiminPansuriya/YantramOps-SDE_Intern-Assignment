@@ -1,6 +1,26 @@
 # YantramOps Notes
 
-YantramOps Notes is a server-rendered note-taking app built with FastAPI, Jinja2, and MongoDB. Create, browse, edit, and delete notes, mark important notes, and learn about the YantramOps team on the About page.
+YantramOps Notes is a server-rendered note-taking app built with FastAPI, Jinja2, and MongoDB. Create, browse, edit, and delete notes, mark important notes, and learn about the YantramOps mission on the About page.
+
+## UI screenshots
+
+The screenshots below show the app's About page, note collection, and note creation page.
+
+### About page — mission
+
+![About page showing the YantramOps mission and principles](screenshots/about-mission.png)
+
+### About page — contact
+
+![About page showing contact information and the add-note prompt](screenshots/about-contact.png)
+
+### Note collection
+
+![Note collection page displaying saved notes](screenshots/collection.png)
+
+### Add a note
+
+![Add Note page with title, details, and important checkbox](screenshots/add-note.png)
 
 ## Features
 
@@ -8,7 +28,7 @@ YantramOps Notes is a server-rendered note-taking app built with FastAPI, Jinja2
 - Mark notes as important and edit their content later.
 - Browse notes by creation time, with creation and last-updated timestamps shown in UTC.
 - Delete notes after confirming the action.
-- View the YantramOps mission and team profiles on the About page.
+- View the YantramOps mission and contact information on the About page.
 - Use the responsive interface on desktop and mobile.
 
 ## Pages and routes
@@ -18,7 +38,7 @@ YantramOps Notes is a server-rendered note-taking app built with FastAPI, Jinja2
 | `GET` | `/` | Display the form for creating a note. |
 | `POST` | `/` | Save a note and redirect to the collection. |
 | `GET` | `/collection` | Display saved notes and their actions. |
-| `GET` | `/about` | Display the mission and team profiles. |
+| `GET` | `/about` | Display the mission, principles, and contact information. |
 | `GET` | `/notes/{note_id}/edit` | Display the edit form for a note. |
 | `POST` | `/notes/{note_id}/edit` | Save note changes and redirect to the collection. |
 | `DELETE` | `/notes/{note_id}` | Delete a note; returns `204 No Content` on success. |
@@ -93,12 +113,13 @@ YantramOps_Intern_Task_FastAPI/
 │   └── note/route.py         # Page and note routes
 ├── schemas/
 │   └── note/schema.py        # MongoDB serialization helpers
-├── static/                   # Team and site images
+├── screenshots/              # UI screenshots included below
+├── static/                   # Site assets
 ├── templates/
 │   ├── index.html            # Create note page
 │   ├── collection.html       # Notes collection
 │   ├── edit_note.html        # Edit note page
-│   └── about.html            # Mission and team page
+│   └── about.html            # Mission and contact page
 └── index.py                  # FastAPI application entry point
 ```
 
