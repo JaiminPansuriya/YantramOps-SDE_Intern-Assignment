@@ -6,6 +6,14 @@ YantramOps Notes is a server-rendered note-taking app built with FastAPI, Jinja2
 
 The screenshots below show the app's About page, note collection, and note creation page.
 
+### Add a note
+
+![Add Note page with title, details, and important checkbox](screenshots/add-note.png)
+
+### Note collection
+
+![Note collection page displaying saved notes](screenshots/collection.png)
+
 ### About page — mission
 
 ![About page showing the YantramOps mission and principles](screenshots/about-mission.png)
@@ -14,13 +22,9 @@ The screenshots below show the app's About page, note collection, and note creat
 
 ![About page showing contact information and the add-note prompt](screenshots/about-contact.png)
 
-### Note collection
 
-![Note collection page displaying saved notes](screenshots/collection.png)
 
-### Add a note
 
-![Add Note page with title, details, and important checkbox](screenshots/add-note.png)
 
 ## Features
 
